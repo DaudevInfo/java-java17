@@ -21,6 +21,7 @@ public class Method_02_Test {
         public default String format() {
             return "[" + findAll().size() + " persons]";}
     }
+
     // end::IDao[]
 
     // tag::DaoA[]
