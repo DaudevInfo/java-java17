@@ -17,7 +17,6 @@ public class Method_01_Test {
     interface IDao {
         List<Person> findAll();
 
-        // TODO créer une méthode int sumAge()
         // TODO Cette méthode retourne le résultat de l'addition des ages des personnes
 
         public default int sumAge() {
