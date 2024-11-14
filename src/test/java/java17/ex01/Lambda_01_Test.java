@@ -74,6 +74,7 @@ public class Lambda_01_Test {
 
         String passwordSha512Hex = "ee26b0dd4af7e749aa1a8ee3c10ae9923f618980772e473f8819a5d4940e0db27ac185f8a0e1d5f84f88bc887fd67b143732c304cc5fa9ad8e6f57f50028a8ff";
 
+
         // TODO result ne doit contenir que les personnes dont l'age est > 49 et dont le hash du mot de passe correspond à la valeur de la variable passwordSha512Hex
         // TODO Pour obtenir le hash d'un mot, utiliser la méthode DigestUtils.sha512Hex(mot)
         List<Person> result = filter(personList, (Person p)-> p.getAge()>49 && passwordSha512Hex.equals(DigestUtils.sha512Hex(p.getPassword())));
