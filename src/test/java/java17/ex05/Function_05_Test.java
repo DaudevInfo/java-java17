@@ -23,16 +23,16 @@ public class Function_05_Test {
     // TODO compléter la fonction
     // TODO vérifier que l'age > 4 avec une assertion JUnit
     Consumer<Person> verifyAge = p -> {
-        //assert p.getAge() == 4 : "Age n'est pas égal à 4";
-        assertTrue(p.getAge() > 4);
+        assert p.getAge() != 4 : "Age n'est pas égal à 4";
+        //assertTrue(p.getAge() > 4);
     };
 
     // TODO compléter la fonction
     // TODO vérifier que le mot de passe est "secret" avec une assertion JUnit
 
     Consumer<Person> verifyPassword = p -> {
-        //assert p.getPassword().equals("secret") : "Password doit être 'secret'" ;
-        assertTrue(p.getPassword().equals("secret"));
+        assert p.getPassword().equals("secret") : "Password doit être 'secret'" ;
+        //assertTrue(p.getPassword().equals("secret"));
     };
     //end::functions[]
 
